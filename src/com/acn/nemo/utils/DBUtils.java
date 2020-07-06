@@ -4,6 +4,11 @@ import java.sql.Connection;
 
 public class DBUtils {
 
+    private String url;
+    private String username;
+    private String password;
+
+    private static Connection connection;
     //Contiene i metodi per accedere al DB
     //dammi la connesione
     //chiudi la connesione
@@ -12,7 +17,10 @@ public class DBUtils {
     //Singleton
 
 
+
     public static Connection getConnectio(){
-        return Connection;
+        return connection;
     }
+
+    public void closeConnection(){}
 }

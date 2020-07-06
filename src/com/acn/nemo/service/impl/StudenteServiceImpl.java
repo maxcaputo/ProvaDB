@@ -1,12 +1,13 @@
 package com.acn.nemo.service.impl;
 
 import com.acn.nemo.dao.StudentDao;
+import com.acn.nemo.dao.impl.StudentDaoImpl;
 import com.acn.nemo.model.Studente;
 import com.acn.nemo.service.StudenteService;
 
 public class StudenteServiceImpl implements StudenteService {
 
-    StudentDao studentDao = new StudentDao();
+    StudentDao studentDao = new StudentDaoImpl();
 
     @Override
     public void getStudente(Studente studente) {
